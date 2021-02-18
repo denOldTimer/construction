@@ -1,0 +1,35 @@
+//breakpoints
+//respond is the name of the mixin
+@mixin respond ($size){
+
+    @if $size==mobile {
+        @media only screen and (max-width: 480px){
+            @content;
+        }
+    }
+
+    @if $size==tablet {
+        @media only screen and (max-width: 600px){
+            @content;
+        }
+    }
+
+    @if $size==tablet-landscape-up {
+        @media only screen and  (min-width: 900px) {
+            @content;
+        }
+    }
+
+    @if $size==desktop {
+        @media only screen and  (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $size==big-screen {
+        @media only screen and (min-width: 1800px) {
+            @content;
+        }
+    }
+
+};

@@ -1,0 +1,47 @@
+{ 
+  "trans" :
+  {
+    "menu":      
+      {
+        "home" : "Home",
+        "about" : "Our Company",
+        "products" : "Our Products",
+        "contact" : "Contact Us"
+      }, 
+
+    "forms":
+    {
+      "name": "Name",
+      "address": "Address",
+      "vat": "VAT",
+      "email": "E-mail",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send"
+    },
+        
+    "contact":      
+      {
+      "admin": "Administration",
+      "sales": "Sales Force",
+      "wh": "Warehouse"
+      }
+  }
+      
+
+
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+

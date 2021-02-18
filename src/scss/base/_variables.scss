@@ -1,0 +1,105 @@
+//
+// Colors
+//
+// Scale of Gray
+$white: #fff !default;
+$gray-001: #f8f9fa !default;
+$gray-002: #e9ecef !default;
+$gray-003: #dee2e6 !default;
+$gray-004: #ced4da !default;
+$gray-005: #adb5bd !default;
+$gray-006: #6c757d !default;
+$gray-007: #495057 !default;
+$gray-008: #343a40 !default;
+$gray-009: #212529 !default;
+$black: #000 !default;
+// Scale of Blue
+$blue-001: #48dbfb;
+$blue-002: #0abde3;
+$blue-003: #54a0ff;
+$blue-004: #2e86de;
+$blue-005: #00a8ff;
+// Scale of Green
+$green-001: #1dd1a1;
+$green-002: #10ac84;
+// Scale of Red
+$red-001: #feca57;
+$red-002: #ff9f43;
+$red-003: #ff6b6b;
+$red-004: #ee5253;
+// Scale of Pink
+$pink-001: #ff9ff3;
+$pink-002: #f368e0;
+// Scale of Purple
+$purple-001: #5f27cd;
+$purple-002: #341f97;
+//
+//
+// Colors - Navbar
+//
+$navbar-bg-color: rgba(33, 33, 33, 0.75);
+$navbar-link-brand-color: $blue-005;
+$navbar-link-toggle-color: $white;
+$navbar-link-color: $white;
+$navbar-link-color-hover: $red-002;
+$navbar-link-color-focus: $red-002;
+$navbar-link-color-active: $red-002;
+$navbar-lang-select-color: $white;
+$navbar-lang-select-color-hover: $red-002;
+//
+// Colors - Modal
+//
+$modal-button-close : $gray-009;
+$modal-button-close-focus: $red-002;
+$modal-bg-color: rgba(0, 0, 0, 0.5);
+$modal-container-bg-color: $blue-005;
+$modal-content-color: $white;
+$modal-a-color : $white;
+$modal-a-color-hover : $red-004;
+//
+// Fonts
+//
+$font-family-sans-serif: Montserrat,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+ !default;
+
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 16px !default;
+$font-size-xs: $font-size-base * .475 !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base * 2 !default;
+$font-size-xl: $font-size-base * 4 !default;
+
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+//
+// Forms
+//
+$form-input-border-color: $gray-009;
+$form-input-bg-color: $gray-009;
+$form-input-color: $green-002;
+$form-textarea-border-color: $gray-009;
+$form-textarea-bg-color: $gray-009;
+$form-textarea-color: $green-002;
+$form-btn-color: $white;
+$form-btn-bg-color: $green-001;

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
+
+
+
+/* baloo-2-700 - latin */
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/public/fonts/baloo-2/baloo-2.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/public/fonts/baloo-2/baloo-2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/public/fonts/baloo-2/baloo-2.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/baloo-2/baloo-2.woff') format('woff'), /* Modern Browsers */
+       url('/public/fonts/baloo-2/baloo-2.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/public/fonts/baloo-2/baloo-2.svg#Baloo2') format('svg'); /* Legacy iOS */
+}
+
+
+/* fira-code-regular - latin */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/public/fonts/fira-code/fira-code-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/public/fonts/fira-code/fira-code-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/public/fonts/fira-code/fira-code-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/public/fonts/fira-code/fira-code-regular.woff') format('woff'), /* Modern Browsers */
+       url('/public/fonts/fira-code/fira-code-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/public/fonts/fira-code/fira-code-regular.svg#FiraCode') format('svg'); /* Legacy iOS */
+}

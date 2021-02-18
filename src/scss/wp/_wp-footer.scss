@@ -1,0 +1,23 @@
+footer {
+  padding-top: 2em;
+  background-color: $gray-009;
+  color: $blue-005;
+  font-size: $font-size-sm;
+  text-align: center;
+  padding: 1em;
+
+  @include respond (mobile) {
+    font-size: $font-size-xs;
+  }
+
+  span {
+    color: $white;
+    font-size: $font-size-base;
+
+    @include respond (tablet-landscape-up){
+      font-size: $font-size-sm;
+    }
+  }
+
+
+}
