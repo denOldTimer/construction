@@ -21,6 +21,8 @@ class Config
     return self::$SHOW_ERRORS;
   }
 
+
+
   //3.    define database attributes
   private static $DB_TYPE = "mysql";
   private static $DB_HOST = "127.0.0.1";
@@ -42,6 +44,7 @@ class Config
     );
     return $pdo;
   }
+
 
   // ------------- DO NOT CHANGE AFTER INSTALL -----------------------------
   //4. Hash codes

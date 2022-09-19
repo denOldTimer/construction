@@ -3,7 +3,7 @@ namespace App\Controllers;
 use App\Core\Controller;
 use App\Core\View;
 /**
- *  Home
+ *  Construction
  */
 class Home extends Controller
 {
@@ -14,8 +14,10 @@ class Home extends Controller
     protected function before(){}
 
     public function indexAction( $args = array() ){
+        //casesensitieve
+        $viewName = strtolower($args['controller']);
+
         $scMeta = self::getScMeta();
-        $scMeta['scMetaDescription']    = 'This is the official homepage of YourWebSiteName';
         $scMeta['scMetaOgUrl']          = $scMeta['scMetaOgUrl'] .'/'.$args['lang'].'/'.$args['controller'].'/'.$args['action'];
         $scMeta['scMetaOgTitle']        = ucfirst ( $args['controller'] );
         $scMeta['scMetaOgDescription']  = $scMeta['scMetaOgDescription'].' '.$scMeta['scMetaDescription'];
@@ -23,18 +25,22 @@ class Home extends Controller
 
         $scVariables = self::getScVariables();
         $scVariables['scLang'] 			= $args['lang'];
-        $scVariables['scController'] 	= $args['controller'];
+        $scVariables['scController'] 	= strtolower($args['controller']);
         $scVariables['scAction'] 		= $args['action'];
         $scVariables['scTitle'] 		= ucfirst ( $args['controller'] );
-        $scVariables['scSlogan'] 		= 'Welcome to YourWebSiteName';
 
+        //var_dump($scVariables);
+
+        //$trans = self::getTranslation($args['lang'], $viewName);
         $trans = self::getTranslation($args['lang']);
+        //var_dump($trans);
 
-        //$data = array_merge($scMeta, $scVariables, $scImages, $scLinks, $scLinksFooter);
-        $data = array_merge($scMeta, $scVariables, $trans);
-        $t = 'home';
+         //$data = array_merge($scMeta, $scVariables, $scImages, $scLinks, $scLinksFooter);
+        $data = array_merge($scMeta, $scVariables);
+        
 
-        View::render('f1', $t, $data);
+        View::render('f2', $viewName, $data, $trans);
+        //View::render('f2', args['controller'], $data);
     }
 
     protected function after(){}

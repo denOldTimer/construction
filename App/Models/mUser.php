@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use App\Core\Model;
@@ -46,5 +47,4 @@ class mUser extends Model
         $dB = self::getdb();
         return $dB->select("SELECT * FROM sc_user WHERE email='$email' ");
     }
-
 } //END CLASS
